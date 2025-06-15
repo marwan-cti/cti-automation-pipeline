@@ -1,0 +1,17 @@
+# 📄 Template – Fiche Cas d’Usage CTI
+
+## 🎯 TITRE
+
+## 🔎 CONTEXTE
+
+## 🎯 OBJECTIF DE DÉTECTION
+
+## 🛠️ SCÉNARIO TECHNIQUE
+
+## 📦 IOC DÉTECTÉS
+
+## 🔐 PLAYBOOKS DÉCLENCHÉS
+
+## 🎯 IMPACTS VISÉS
+
+## 🔁 EXTENSIONS POSSIBLES

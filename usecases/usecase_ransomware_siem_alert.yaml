@@ -1,0 +1,19 @@
+# 💣 Cas d’usage CTI – Alerte ransomware + corrélation SIEM + réaction RH
+
+## 🔎 CONTEXTE
+Un poste utilisateur est touché par un ransomware identifié dans les logs. Un exfiltrateur FTP actif a été repéré par le SIEM (Security Information and Event Management).
+En parallèle, le salarié ciblé a reçu un e-mail d’ultimatum menaçant la publication de données confidentielles RH.
+
+## 🎯 OBJECTIF
+- Détection de l’IOC lié au ransomware
+- Corrélation SIEM + alertes OSINT (ex : leak threats)
+- Activation de 2 playbooks : réponse technique + gestion RH de crise
+
+## 📦 IOC détectés
+- hash SHA256 du binaire `ransom.exe`
+- IP du serveur FTP d’exfiltration
+- email source menaçant
+
+## PLAYBOOKS
+- `contain_ransomware.yaml` : isolation machine, alerte SOC
+- `hr_crisis.yaml` : notification DRH, activation plan de com interne

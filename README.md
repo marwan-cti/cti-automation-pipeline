@@ -1,7 +1,5 @@
 # SIGMA-PULSE
 
-SIGMA-PULSE est un pipeline d’automatisation en Cyber Threat Intelligence (CTI), visant à détecter, corréler et anticiper des scénarios de crise systémique mêlant signaux financiers, cyber et narratifs.
-
 ## Structure du projet
 
 ```
@@ -27,4 +25,3 @@ SIGMA-PULSE est un pipeline d’automatisation en Cyber Threat Intelligence (CTI
 ```bash
 python main.py
 ```
-

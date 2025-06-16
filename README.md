@@ -1,5 +1,8 @@
 # 🛰️ CTI Automation Pipeline
 
+> ⚠️ **Projet en cours de construction**  
+> Le développement débutera début juillet 2025. Le dépôt est déjà structuré pour documenter les cas d’usage, les playbooks et l’architecture cible.
+
 > A hybrid threat detection engine combining OSINT, technical indicators (IOC), and automated playbook activation for Cyber Threat Intelligence (CTI) use cases.
 
 ---

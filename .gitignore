@@ -1,5 +1,5 @@
-__pycache__/
 *.pyc
+__pycache__/
 .env
 *.log
-data/incoming/svg_files/*
+*.sqlite

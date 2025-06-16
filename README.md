@@ -1,51 +1,27 @@
-# 🛰️ CTI Automation Pipeline
+# SIGMA-PULSE
 
-> ⚠️ **Projet en cours de construction**  
-> Le développement débutera début juillet 2025. Le dépôt est déjà structuré pour documenter les cas d’usage, les playbooks et l’architecture cible.
+## Structure du projet
 
-> A hybrid threat detection engine combining OSINT, technical indicators (IOC), and automated playbook activation for Cyber Threat Intelligence (CTI) use cases.
-
----
-
-## 📌 Features
-
-- 📰 RSS ingestion (e.g. failed bond auctions)
-- 🖼️ Malicious SVG scanner
-- 💬 Narrative signal simulation (Telegram/X)
-- ⚙️ Risk scoring & correlation engine
-- 🚨 Automated response via YAML playbooks
-- 📂 IOC extraction and enrichment (future: MISP, VT)
-
----
-
-## 🚀 Getting Started
-
-```bash
-git clone https://github.com/youruser/cti-automation-pipeline.git
-cd cti-automation-pipeline
-pip install -r requirements.txt
-python main.py
+```
+📁 ingestion/        # Collecte des données brutes (IOC, X/TG, finance)
+📁 processing/       # Extraction IOC, NER, nettoyage
+📁 correlation/      # Moteur de mise en relation des signaux
+📁 scoring/          # Calcul du niveau de menace par signal
+📁 playbooks/        # Actions à déclencher automatiquement
+📁 reporting/        # Génération de rapports (Markdown, PDF)
+📁 utils/            # Fonctions génériques, config
+📄 main.py           # Orchestrateur global du pipeline
 ```
 
----
+## Objectifs
+- Ingestion multi-source (IOC, narratif, financier)
+- Corrélation des signaux faibles
+- Scoring de menace hybride
+- Déclenchement de playbooks automatisés
+- Génération de rapports enrichis pour analystes
 
-## 📦 Use Cases
+## Lancement
 
-- [VIP targeted by phishing + disinfo](usecases/usecase_vip_disinfo_phishing.md)
-- [Ransomware + SIEM + HR reaction](usecases/usecase_ransomware_siem_alert.yaml)
-- [→ Template for future use cases](usecases/template_usecase_blank.md)
-
----
-
-## 🛠️ Technologies
-
-- Python 3.10+
-- feedparser / requests
-- YAML / bash
-- Modular playbook engine
-
----
-
-## 📄 License
-
-MIT License
+```bash
+python main.py
+```
